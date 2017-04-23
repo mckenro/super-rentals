@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">{{rental.owner}}'s {{rental.type}} in {{rental.city}}</h2>
+  </div>
+      <div class="panel-body">
+      {{#if isImageShowing }}
+        <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
+      {{else}}
+        <div class="form-group">
+          <button class="btn btn-primary" {{action 'imageShow'}}>Show Image</button>
+        </div>
+      {{/if}}
+        <div class="form-group">
+          <button class="btn btn-danger" {{action 'delete' rental}}>Delete Rental</button>
+        </div>
+    </div>
+</div>

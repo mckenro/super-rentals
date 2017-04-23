@@ -1,0 +1,42 @@
+{{#if addNewRental}}
+
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h2 class="panel-title">New Rental</h2>
+  </div>
+  <div class="panel-body">
+      <form>
+        <div class="form-group">
+          <label for="owner">Owner</label>
+          {{input class="form-control" value=owner id="owner"}}
+        </div>
+
+        <div class="form-group">
+          <label for="type">Type</label>
+          {{input class="form-control" value=type id="type"}}
+        </div>
+
+        <div class="form-group">
+          <label for="city">City</label>
+          {{input class="form-control" value=city id="city"}}
+        </div>
+
+        <div class="form-group">
+          <label for="bedrooms">Number of Bedrooms</label>
+          {{input class="form-control" value=bedrooms id="bedrooms"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input class="form-control" value=image id="image"}}
+        </div>
+
+        <button class="btn btn-success" {{action 'saveRental1'}}>Save</button>
+      </form>
+    </div>
+</div>
+{{else}}
+<div class="form-group">
+  <button class="btn btn-success" {{action 'rentalFormShow'}}>Add New Rental</button>
+</div>
+{{/if}}

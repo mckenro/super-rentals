@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         city: this.get('city'),
         type: this.get('type'),
         image: this.get('image'),
-        bedroome: this.get('bedrooms'),
+        bedrooms: this.get('bedrooms'),
       };
       this.set('addNewRental', false);
       this.sendAction('saveRental2', params);

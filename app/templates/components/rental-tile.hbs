@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h2 class="panel-title">{{rental.owner}}'s {{rental.type}} in {{rental.city}}</h2>
+    <h2 class="panel-title">{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}</h2>
   </div>
       <div class="panel-body">
       {{#if isImageShowing }}
@@ -10,9 +10,5 @@
           <button class="btn btn-primary" {{action 'imageShow'}}>Show Image</button>
         </div>
       {{/if}}
-      <div class="form-group">
-        <button class="btn btn-danger" {{action 'delete' rental}}>Delete Rental</button>
-      </div>
-      {{update-rental rental=rental update="update"}}
     </div>
 </div>

@@ -21,5 +21,15 @@
   "announcements": [{
     "title": "Huge Sale!",
     "message": "All Hawaii vacations are 30% off!"
-  }]
+  }],
+  "reviews": [{
+    "author": "Andrea",
+    "rating": 8,
+    "content": "Great place! Highly reccomend!"
+  }, {
+    "author": "Silvio",
+    "rating": 9,
+    "content": "Great views and ammenities!"
+
+    }]
 }

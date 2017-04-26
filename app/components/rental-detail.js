@@ -6,6 +6,9 @@ export default Ember.Component.extend({
       if (confirm('Do you really want to delete this rental?')) {
         this.sendAction('destroyRental', rental);
       }
+    },
+    destroyReview(review) {
+      this.sendAction('destroyReview', review);
     }
   }
 });

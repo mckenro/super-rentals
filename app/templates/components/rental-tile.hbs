@@ -10,8 +10,9 @@
           <button class="btn btn-primary" {{action 'imageShow'}}>Show Image</button>
         </div>
       {{/if}}
-        <div class="form-group">
-          <button class="btn btn-danger" {{action 'delete' rental}}>Delete Rental</button>
-        </div>
+      <div class="form-group">
+        <button class="btn btn-danger" {{action 'delete' rental}}>Delete Rental</button>
+      </div>
+      {{update-rental rental=rental update="update"}}
     </div>
 </div>
